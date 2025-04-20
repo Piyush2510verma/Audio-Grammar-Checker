@@ -24,11 +24,7 @@ This Streamlit app lets you upload an audio file (`.wav` or `.mp3`), transcribes
 
 2. **Install dependencies**:
    ```bash
-   - Python 3.8+
-   - Streamlit
-   - OpenAI Whisper
-   - Google Generative AI (`google-generativeai`)
-   - Libraries: `librosa`, `numpy`, `whisper`, `dotenv`, `tempfile`, etc.
+   pip install -r requirements.txt
    ```
 
 3. **Set up environment variables**:  
