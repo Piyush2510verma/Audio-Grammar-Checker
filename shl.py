@@ -5,6 +5,7 @@ import google.generativeai as genai
 import whisper
 import json
 import re
+import tempfile
 from dotenv import load_dotenv
 load_dotenv()
 
