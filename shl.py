@@ -7,9 +7,16 @@ import tempfile
 import whisper
 import json
 import re
+from dotenv import load_dotenv
+load_dotenv()
 
-# Configure Gemini API
-GEMINI_API_KEY = "AIzaSyCgFeBOFoyIwIZuwzn-KgyIp7oXQP3q7aM"  # Replace with your actual Gemini API key
+
+# Load Gemini API Key from environment variable
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+if not GEMINI_API_KEY:
+    st.error("Gemini API Key not found. Please set GEMINI_API_KEY environment variable.")
+    st.stop()
+
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Load Whisper model once
