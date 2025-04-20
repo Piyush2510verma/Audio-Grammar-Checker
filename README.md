@@ -55,10 +55,4 @@ This Streamlit app lets you upload an audio file (`.wav` or `.mp3`), transcribes
 ---
 
 
-## 🛡️ Disclaimer
-
-- This app uses external AI services (OpenAI Whisper and Google Gemini).
-- Keep your API keys secure. **Never** commit API keys to public repositories.
-
----
 
