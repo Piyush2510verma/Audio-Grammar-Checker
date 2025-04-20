@@ -1,9 +1,7 @@
 import streamlit as st
-import librosa
 import numpy as np
 import os
 import google.generativeai as genai
-import tempfile
 import whisper
 import json
 import re
